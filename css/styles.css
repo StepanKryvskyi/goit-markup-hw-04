@@ -88,6 +88,8 @@ button {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .main-nav {
@@ -150,7 +152,7 @@ button {
 
 /* Hero */
 .hero {
-  max-width: 1440рх;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
@@ -160,7 +162,6 @@ button {
   background-color: var(--titel-text-color);
 
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -210,6 +211,16 @@ button {
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .titel {
@@ -283,11 +294,13 @@ button {
   line-height: 1.5;
   width: calc((100% - 72px) / 4);
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-container {
   padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-titel {
@@ -315,15 +328,15 @@ button {
 .socials {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 .socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 
   background-color: var(--button-color);
   border-radius: 50%;
@@ -331,26 +344,25 @@ button {
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--acsent-color);
-  
 }
 .socials-icon {
-  fill: currentColor;
+  fill: #f4f4fd;
 }
 
 /* Partners */
 
-.partners{
-padding-top: 120px;
-padding-bottom: 120px;
+.partners {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.customers-titel{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+.customers-titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .partner-list {
@@ -367,10 +379,10 @@ text-transform: capitalize;
   padding: 16 32;
 }
 .partner-links:hover,
-.partner-links:focus{
+.partner-links:focus {
   color: var(--acsent-color);
 }
-.partner-icon{
+.partner-icon {
   fill: currentColor;
 }
 
@@ -405,6 +417,8 @@ text-transform: capitalize;
   background-color: var(--acsent-color);
   color: var(--primary-white-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works-list {
@@ -427,6 +441,7 @@ text-transform: capitalize;
 
 .portfolio-link {
   background: var(--primary-white-color);
+  display: block;
 }
 
 .portfolio-link:hover,
