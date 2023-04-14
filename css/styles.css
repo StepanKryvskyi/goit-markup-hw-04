@@ -150,11 +150,24 @@ button {
 
 /* Hero */
 .hero {
-  background-color: var(--titel-text-color);
+  max-width: 1440рх;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
 
+  background-color: var(--titel-text-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-titel {
@@ -290,11 +303,75 @@ button {
 }
 .team-list-text {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
+}
+
+/* Socials icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--button-color);
+  border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--acsent-color);
+  
+}
+.socials-icon {
+  fill: currentColor;
+}
+
+/* Partners */
+
+.partners{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.customers-titel{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+.partner-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.partner-item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16 32;
+}
+.partner-links:hover,
+.partner-links:focus{
+  color: var(--acsent-color);
+}
+.partner-icon{
+  fill: currentColor;
 }
 
 /* Portfolio styles */
@@ -350,6 +427,12 @@ button {
 
 .portfolio-link {
   background: var(--primary-white-color);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .caption {
