@@ -9,6 +9,7 @@
   --titel-text-color: #2e2f42;
   --button-color: #4d5ae5;
   --acsent-color: #404bbf;
+  --customers-logo-color: #8e8f99; 
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -388,7 +389,7 @@ button {
   display: flex; 
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--customers-logo-color)
 }
 
 .partner-links:hover,
@@ -400,8 +401,6 @@ button {
 .partner-icon {
   fill: currentColor;
 }
-
-
 
 /* Portfolio styles */
 
