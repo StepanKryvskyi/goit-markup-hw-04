@@ -490,8 +490,10 @@ button {
 .footer-container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 
+}
+.footer-logo-text{
+  margin-right: 120px;
 }
 
 .socials-footer{
